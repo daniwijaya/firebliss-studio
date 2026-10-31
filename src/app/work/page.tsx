@@ -1,0 +1,2 @@
+import type {Metadata} from "next";import {Nav,Footer,Grid} from "@/components/ui";export const metadata:Metadata={title:"Selected Work"};
+export default function Work(){return <><Nav/><main className="wrap inner"><small>PORTFOLIO / SELECTED WORK</small><h1>SELECTED WORK.<br/><em>REAL DESIGN THINKING.</em></h1><p className="lede">Illustrative placeholders are clearly labeled and ready to replace with approved Firebliss work.</p><Grid filters/></main><Footer/></>}

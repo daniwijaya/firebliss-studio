@@ -1,0 +1,2 @@
+import type {Metadata} from "next";import {Nav,Footer,Form} from "@/components/ui";export const metadata:Metadata={title:"Let’s Talk"};
+export default function Contact(){return <><Nav/><main className="wrap inner"><small>LET’S TALK / PROJECT INQUIRY</small><div className="contact"><div><h1>LET’S TALK<br/>ABOUT YOUR<br/><em>NEXT PROJECT.</em></h1><p className="lede">Have an early idea or a brief ready to go? Tell us a little about it.</p><p>Email: <a href="mailto:firebliss.studio@gmail.com">firebliss.studio@gmail.com</a></p></div><Form/></div></main><Footer/></>}
