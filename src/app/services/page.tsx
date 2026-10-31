@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Nav, Footer } from "@/components/ui";
+import { Nav, Footer, Icon } from "@/components/ui";
 import { services } from "@/data/site";
 
 export const metadata: Metadata = { title: "Services" };
@@ -32,7 +32,7 @@ export default function Services() {
                   {service.items.map((item) => <li key={item}>{item}</li>)}
                 </ul>
                 <Link href="/contact">
-                  DISCUSS A PROJECT <span className="button-icon" aria-hidden="true">↗</span>
+                  DISCUSS A PROJECT <span className="button-icon"><Icon name="arrow-up-right"/></span>
                 </Link>
               </div>
             </section>
@@ -42,7 +42,7 @@ export default function Services() {
         <section className="services-end">
           <h2>NOT SURE WHERE TO START?</h2>
           <Link className="red" href="/contact">
-            LET’S TALK <span className="button-icon" aria-hidden="true">↗</span>
+            LET’S TALK <span className="button-icon"><Icon name="arrow-up-right"/></span>
           </Link>
         </section>
       </main>
